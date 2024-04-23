@@ -38,8 +38,10 @@ Essentials:
 
 - [BypassESU](https://forums.mydigitallife.net/threads/bypass-windows-7-extended-security-updates-eligibility.80606/) (login required) - A project to install Extended Security Updates for Windows 7 and Server 2008 R2
 - [wufuc](https://github.com/chipsi007/wufuc) - Disables the "Unsupported Hardware" message in Windows Update
+- [UefiSeven](https://github.com/manatails/uefiseven) - Allows Windows 7 to boot without CSM enabled. Only needed if you don't want to or can't boot with CSM (aka legacy boot) enabled
 - [Windows 7 ESU Patching](https://hackandpwn.com/windows-7-esu-patching/) by [HackAndPwn](https://hackandpwn.com/) - comprehensive list of official Windows updates and their meaning for `the most up-to-date installation possible`
 - [Simplix UpdatePack 7](https://www.majorgeeks.com/files/details/simplix_updatepack.html) [[official website](https://blog.simplix.info/update7/)] - Update set for Windows 7 SP1 and Server 2008 R2 SP1
+
 
 Tweaks:
 
@@ -62,6 +64,8 @@ Other repositories:
 
 - [Windows 7 & Thorium](https://thorium.rocks/win7) - Unofficial builds of software based on the [Thorium browser](https://github.com/Alex313031/thorium-win7) (Chromium fork), also some other patched software
 - [Compatibility List](https://thorium.rocks/misc/win7_compat_list.html) by the same author ([Alex313031](https://github.com/Alex313031)). Contains download links.
+- [/lwt/ Copypasta](https://pastebin.com/M32z9Mpg) - A massive copypasta with info on many legacy releases of Windows. No longer updated but still has a lot of useful info
+- [legacy-windows-survival-guide](https://github.com/dddddjdddjddjdjdd/legacy-windows-survival-guide) - Work in progress legacy Windows survival guide by dddddjdddjddjdjdd 
 
 ---
 
@@ -100,28 +104,31 @@ Name     | Official | Tested  | Compatible | Patched
 Electron | 22       |         |            |
 Go       | 1.20     |         | 1.21.4     |
 Node.js  | 12.22.12 | 16.18.1 | 19.9.0     |
-Python   | 3.8.18   |         |            | 🇵 3.12.2
+Python   | 3.8.19   |         |            | 🇵 3.12.3
 
-- [PythonWin7](https://github.com/adang1345/PythonWin7)
+- [PythonWin7](https://github.com/adang1345/PythonWin7/releases)
 - Node.js: [use .zip binaries](https://nodejs.org/en/about/previous-releases), v20.x doesn't work anymore. Installers may work with `NODE_SKIP_PLATFORM_CHECK=1`
 
 ## Applications
 
 ### Web Browsers
 
-Name                         | Official       | Tested         | Compatible | Patched
------------------------------|----------------|----------------|------------|--------
-Firefox                      | 115 ESR        |                |            |
-Firefox Developer Edition    | 115            | 115.0b9        |            |
-Google Chrome                | 109            | 109.0.5414.120 |            |
-Microsoft Edge               | 109            | 109.0.1518.140 |            |
-Supermium (Chromium fork)    | 121.0.6167.81  |                |            |
-Thorium (Chromium fork)      | 109.0.5414.173 |                |            |
-Thorium-Win7 (Chromium fork) | 119.0.6045.214 |                |            |
+Name                           | Official       | Tested         | Compatible | Patched
+-------------------------------|----------------|----------------|------------|--------
+Firefox                        | 115 ESR        |                | 116.0.3    | 🇻 ❗ 125.0.2
+Firefox Developer Edition      | 115            | 115.0b9        |            |
+Firefox Nightly                | 115            |                | 117.0a1    |
+Google Chrome                  | 109            | 109.0.5414.120 |            |
+Microsoft Edge                 | 109            | 109.0.1518.140 |            |
+Supermium (Chromium fork)      | 122.0.6261.85  |                |            |
+Thorium (Chromium fork)        | 109.0.5414.173 |                |            |
+Thorium Legacy (Chromium fork) | 122.0.6261.168 |                |            |
 
 - [Google Chrome](https://edgedl.me.gvt1.com/edgedl/release2/10/windows-8/googlechromestandaloneenterprise64.msi) - latest MSI
 - [Supermium](https://github.com/win32ss/supermium/releases)
-- [Thorium](https://github.com/Alex313031/thorium-win7)
+- [Thorium](https://github.com/Alex313031/thorium-legacy/releases)
+
+Note: For versions of Firefox past 115 ESR, Firefox may automatically install the latest (Probably non-working on Windows 7) version of the browser. To avoid this, install a registry like [this one](https://winaero.com/disable-updates-firefox-63-above/) to prevent Firefox from updating or from nagging you about updates.
 
 ### Multimedia
 
@@ -131,12 +138,12 @@ Name | Official | Tested | Compatible | Patched
 
 ### Social/communication
 
-Name    | Official | Tested   | Compatible | Patched
---------|----------|----------|------------|----------
-Discord | Dropped  | 1.0.9032 |            |
-Caprine | Broken   | 2.57.1   |            | 🇵 2.59.3
-
-- [Caprine-ng](https://github.com/Alex313031/caprine-ng)
+Name       | Official | Tested   | Compatible | Patched
+-----------|----------|----------|------------|----------
+Discord    | Dropped  | 1.0.9032 |            |
+Caprine    | Broken   | 2.57.1   |            | 🇵 2.59.3
+Caprine-ng | 2.60.1   |
+- [Caprine-ng](https://github.com/Alex313031/caprine-ng/releases)
 
 ### Office
 
@@ -146,31 +153,39 @@ Mozilla Thunderbird | Supported | 115.7.0 |            |
 
 ### Graphics/design/CAD
 
-Name | Official | Tested | Compatible | Patched
------|----------|--------|------------|--------
-     |          |        |            |
+Name    | Official | Tested | Compatible | Patched
+--------|----------|--------|------------|--------
+Blender | 2.92     |        |            | 🇵 4.1.1
+
+[BlenderCompat (Fork of blender with Windows 7 compatability)]()
 
 ### Developer tools/IDEs
 
-Name              | Official  | Tested   | Compatible | Patched
-------------------|-----------|----------|------------|----------
-Git               | Supported | 2.40.1   |            |
-GitKraken         | Dropped   | 9.11.0   |            |
-Insomnia          | Broken    | 2022.6.0 |            |
-VS Code/VS Codium | 1.70.3    | 1.70.3   |            | 🇵 1.86.0
-WakaTime          | Broken    |          |            |
+Name                 | Official       | Tested   | Compatible | Patched
+---------------------|----------------|----------|------------|----------
+Git                  | Supported      | 2.40.1         |            |
+GitKraken            | Dropped        | 9.11.0         |            |
+Insomnia             | Broken         | 2022.6.0       |            |
+VS Code & VS Codium  | 1.70.3         | 1.70.3         | 1.79.2     | 🇵 1.86.0
+Codium (VSCode fork) | ❗ 1.88.1.24104 | ❗ 1.88.1.24104 |            |
+WakaTime             | Broken         |                |            |
+Go                   | 1.20           |                |            |
+Rust Compiler        | 1.78           |                |            |
 
-- [VSCodium Fork with Optimizations](https://github.com/Alex313031/codium)
+Notes: Rust can still compile for Windows 8.1 - 7, but the support is no longer a high priority and sucess building binaries made aren't guaranteed. As for Go, binaries created in Go only work on Windows 10 and above.
+
+- [Codium](https://github.com/Alex313031/codium/releases)
 
 ### Utilities
 
-Name        | Official  | Tested | Compatible | Patched
-------------|-----------|--------|------------|---------
-Chocolatey  | Supported | 2.2.2  |            |
-Fing        |           | 2.10.0 |            |
-Rufus       | 3.22      | 3.11   |            |
-Syncthing   | Broken    | 1.27.0 |            |
-qBittorrent |           |        |            | 🇻 4.6.3
+Name        | Official    | Tested   | Compatible | Patched
+------------|-------------|----------|------------|---------
+Chocolatey  | Supported   | 2.2.2    |            |
+Fing        |             | 2.10.0   |            |
+Rufus       | 3.22        | 3.22     |            | 🇻 4.4
+Syncthing   | Broken      | 1.27.0   |            |
+qBittorrent | 4.5.5       | 4.5.5    |            | 🇻 4.6.4
+Bitwarden   | Dropped     | 2022.5.0 |            | 🇻 ❗ 2024.4.1
 
 ### Other
 
@@ -182,10 +197,15 @@ Name | Official | Tested | Compatible | Patched
 
 ### Launchers
 
-Name  | Official | Tested     | Compatible | Patched
-------|----------|------------|------------|------------
-PCSX2 |          |            |            | 🇻 1.7.3256
-Steam | Dropped  | 1705108172 |            |
+Name  | Official    | Tested     | Compatible | Patched
+------|-------------|------------|------------|------------
+PCSX2 | 1.6.0       |            |            | 🇻 1.7.3256
+Steam               | Dropped    | 1705108172 |
+EA App              | Supported  |            |
+GOG Galaxy          | 1.2        |            |
+Epic Games Launcher | Supported  |            |
+
+Note: The Epic Games Launcher will drop support in June 2024.
 
 ### Games
 
