@@ -129,8 +129,8 @@ Thorium Legacy (Chromium fork) | 122.0.6261.168 |                |            |
 - [Google Chrome](https://edgedl.me.gvt1.com/edgedl/release2/10/windows-8/googlechromestandaloneenterprise64.msi) - latest MSI
 - [Supermium](https://github.com/win32ss/supermium/releases)
 - [Thorium](https://github.com/Alex313031/thorium-legacy/releases)
-- [Firefox Nightly](https://archive.mozilla.org/pub/firefox/nightly/2023/07/2023-07-14-09-41-20-mozilla-central/)
 - [Firefox](https://archive.mozilla.org/pub/firefox/releases/116.0.3/)
+- [Firefox Nightly](https://archive.mozilla.org/pub/firefox/nightly/2023/07/2023-07-14-09-41-20-mozilla-central/)
 - [LibreWolf](https://gitlab.com/librewolf-community/browser/bsys6/-/releases/116.0.3-1)
 
 Note: For versions of Firefox past 115 ESR, Firefox may automatically install the latest (incompatable) version of the browser. To avoid this, install a registry like [this one](https://winaero.com/disable-updates-firefox-63-above/) to prevent Firefox from updating or from nagging you about updates.
