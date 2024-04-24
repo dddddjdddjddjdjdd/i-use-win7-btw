@@ -105,6 +105,7 @@ Electron | 22       |         |            |
 Go       | 1.20     |         | 1.21.4     |
 Node.js  | 12.22.12 | 16.18.1 | 19.9.0     |
 Python   | 3.8.19   |         |            | 🇵 3.12.3
+Java     | 13       |         | 22         |
 
 - [PythonWin7](https://github.com/adang1345/PythonWin7/releases)
 - Node.js: [use .zip binaries](https://nodejs.org/en/about/previous-releases), v20.x doesn't work anymore. Installers may work with `NODE_SKIP_PLATFORM_CHECK=1`
@@ -118,6 +119,7 @@ Name                           | Official       | Tested         | Compatible | 
 Firefox                        | 115 ESR        |                | 116.0.3    | 🇻 ❗ 125.0.2
 Firefox Developer Edition      | 115            | 115.0b9        |            |
 Firefox Nightly                | 115            |                | 117.0a1    |
+LibreWolf                      | 115            | 115            | 116.0.3-1  |
 Google Chrome                  | 109            | 109.0.5414.120 |            |
 Microsoft Edge                 | 109            | 109.0.1518.140 |            |
 Supermium (Chromium fork)      | 122.0.6261.85  |                |            |
@@ -127,8 +129,11 @@ Thorium Legacy (Chromium fork) | 122.0.6261.168 |                |            |
 - [Google Chrome](https://edgedl.me.gvt1.com/edgedl/release2/10/windows-8/googlechromestandaloneenterprise64.msi) - latest MSI
 - [Supermium](https://github.com/win32ss/supermium/releases)
 - [Thorium](https://github.com/Alex313031/thorium-legacy/releases)
+- [Firefox Nightly](https://archive.mozilla.org/pub/firefox/nightly/2023/07/2023-07-14-09-41-20-mozilla-central/)
+- [Firefox](https://archive.mozilla.org/pub/firefox/releases/116.0.3/)
+- [LibreWolf](https://gitlab.com/librewolf-community/browser/bsys6/-/releases/116.0.3-1)
 
-Note: For versions of Firefox past 115 ESR, Firefox may automatically install the latest (Probably non-working on Windows 7) version of the browser. To avoid this, install a registry like [this one](https://winaero.com/disable-updates-firefox-63-above/) to prevent Firefox from updating or from nagging you about updates.
+Note: For versions of Firefox past 115 ESR, Firefox may automatically install the latest (incompatable) version of the browser. To avoid this, install a registry like [this one](https://winaero.com/disable-updates-firefox-63-above/) to prevent Firefox from updating or from nagging you about updates.
 
 ### Multimedia
 
@@ -153,11 +158,13 @@ Mozilla Thunderbird | Supported | 115.7.0 |            |
 
 ### Graphics/design/CAD
 
-Name    | Official | Tested | Compatible | Patched
---------|----------|--------|------------|--------
-Blender | 2.92     |        |            | 🇵 4.1.1
+Name      | Official | Tested | Compatible | Patched
+----------|----------|--------|------------|--------
+Blender   | 2.92     |        |            | 🇵 4.1.1
+Paint.NET | 4.3.12   | 4.3.12 |            |
 
-[BlenderCompat (Fork of blender with Windows 7 compatability)]()
+[BlenderCompat (Fork of blender with Windows 7 compatability)](https://github.com/nalexandru/BlenderCompat/releases)
+[Paint.NET](https://archive.org/details/paintdotnet_v4_3_12)
 
 ### Developer tools/IDEs
 
@@ -169,7 +176,6 @@ Insomnia             | Broken         | 2022.6.0       |            |
 VS Code & VS Codium  | 1.70.3         | 1.70.3         | 1.79.2     | 🇵 1.86.0
 Codium (VSCode fork) | ❗ 1.88.1.24104 | ❗ 1.88.1.24104 |            |
 WakaTime             | Broken         |                |            |
-Go                   | 1.20           |                |            |
 Rust Compiler        | 1.78           |                |            |
 
 Notes: Rust can still compile for Windows 8.1 - 7, but the support is no longer a high priority and sucess building binaries made aren't guaranteed. As for Go, binaries created in Go only work on Windows 10 and above.
@@ -209,6 +215,6 @@ Note: The Epic Games Launcher will drop support in June 2024.
 
 ### Games
 
-Name | Official | Tested | Compatible | Patched
------|----------|--------|------------|--------
-     |          |        |            |
+Name   | Official | Tested | Compatible | Patched
+-------|----------|--------|------------|--------
+ngrok  | Dropped  |        |            | 3 🇻
