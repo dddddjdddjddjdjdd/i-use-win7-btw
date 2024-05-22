@@ -167,14 +167,15 @@ Paint.NET | 4.3.12   | 4.3.12 |            |
 
 ### Developer tools/IDEs
 
-Name                 | Official       | Tested   | Compatible | Patched
----------------------|----------------|----------|------------|----------
+Name                 | Official       | Tested         | Compatible | Patched
+---------------------|----------------|----------------|------------|----------
 Git                  | Supported      | 2.40.1         |            |
 GitKraken            | Dropped        | 9.11.0         |            |
 Insomnia             | Broken         | 2022.6.0       |            |
 VS Code & VS Codium  | 1.70.3         | 1.70.3         | 1.79.2     | ❗ 🇵 1.88.1 (Codium)
 WakaTime             | Broken         |                |            |
 Rust Compiler        | 1.78           |                |            |
+ngrok  | Dropped     |                |                | 3 🇻       |
 
 Notes: Rust can still compile for Windows 8.1 - 7, but the support is no longer a high priority and sucess building binaries made aren't guaranteed. As for Go, binaries created in Go only work on Windows 10 and above.
 
@@ -215,4 +216,4 @@ Note: The Epic Games Launcher will drop support in June 2024.
 
 Name   | Official | Tested | Compatible | Patched
 -------|----------|--------|------------|--------
-ngrok  | Dropped  |        |            | 3 🇻
+       |          |        |            |
