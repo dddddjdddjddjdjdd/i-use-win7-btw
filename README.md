@@ -146,8 +146,7 @@ Name | Official | Tested | Compatible | Patched
 Name       | Official | Tested   | Compatible | Patched
 -----------|----------|----------|------------|----------
 Discord    | Dropped  | 1.0.9032 |            |
-Caprine    | Broken   | 2.57.1   |            | 🇵 2.59.3
-Caprine-ng | 2.60.1   |
+Caprine    | Broken   | 2.57.1   |            | 🇵 2.60.1 (Caprine-ng)
 - [Caprine-ng](https://github.com/Alex313031/caprine-ng/releases)
 
 ### Office
