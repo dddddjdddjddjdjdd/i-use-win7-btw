@@ -173,8 +173,7 @@ Name                 | Official       | Tested   | Compatible | Patched
 Git                  | Supported      | 2.40.1         |            |
 GitKraken            | Dropped        | 9.11.0         |            |
 Insomnia             | Broken         | 2022.6.0       |            |
-VS Code & VS Codium  | 1.70.3         | 1.70.3         | 1.79.2     | 🇵 1.86.0
-Codium (VSCode fork) | ❗ 1.88.1.24104 | ❗ 1.88.1.24104 |            |
+VS Code & VS Codium  | 1.70.3         | 1.70.3         | 1.79.2     | ❗ 🇵 1.88.1 (Codium)
 WakaTime             | Broken         |                |            |
 Rust Compiler        | 1.78           |                |            |
 
